@@ -46,3 +46,11 @@ def fib(n):
     return fib(n-1) + fib(n-2)
 print(fib(100))
 ```
+
+<p align="justify">Obs.: Para acessar itens ou acessar um valor de um dicionário, podemos usar sua chave, por exemplo:<br></p>
+
+```
+pessoa = {'nome':'Pythonico', 'altura':'1.65', 'idade': '20'}
+print(pessoa['nome'])
+```
+    
