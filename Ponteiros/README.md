@@ -15,4 +15,65 @@ p = &k; //p aponta para o endereço do inteiro k na memória
 *p = 42; //posso colocar dados na variável k usando o ponteiro p</p>
 ```
 
-<p align="justify"></p>
+<p align="justify">Em outras palavras é possível dizer que usando ponteiros consigo inserir ou remover dados que não são contíguos apenas mudando-os de posição.<br>
+<br>
+Implementação:
+<br></p>
+
+```
+struct{
+	int conteudo;
+	struct cel * seg; //seguinte
+}
+type struct cel celula;
+```
+
+<p align="justify">Existem duas formas de você passar argumentos para uma função em C:<br>
+<br>
+a) Passagem por valor, comente uma cópia das variáveis;<br>
+<br>
+b) Passagem por referência, isto é, ponteiros para as variáveis de origem<br>
+<br>
+Python também faz tudo por referência, mas no alto nível. Já a linguagem C foi desenhada para construir um sistema operacional (Linux), por isso é tão baixo nível e por isso é mais difícil programar em C. Nessa linguagem, os perigos maiores se devem aos ponteiros.<br>
+<br>
+Regras:<br>
+<br>
+1) Ponteiro e coisa apontada são diferentes;<br>
+<br>
+2) Não tem sentido ponteiro que não aponta para nada.<br>
+<br>
+É melhor inserir elementos novos no final ou no começo da lista? No começo! Porque, se inserir no final, tenho que andar até o final e isso é ineficiente. Imagine 1 milhão de elementos, se eu tiver que andar até o final vou gastar muito tempo.<br>
+
+_Programar em C = preocupação com eficiência do código_
+
+O que significam as flechas? São o conteúdo de um ponteiro que é <b>struct</b>. P. ex.:<br>
+</p>
+
+```
+struct cel {
+	int conteudo;
+	struct cel seg
+}
+typedef struct cel celula;
+celula *nova;
+nova = malloc(sizeof(celula));
+nova->conteudo = y
+(*nova).conteudo = y; // igual
+
+nova->seg = p->seg;
+(*nova).seg = (*p).seg; // igual
+```
+
+<p align="justify">Por que eu tenho um elemento sem nada no início?<br>
+<br>
+Eu chamei de <b>cabeça</b> esse elemento.<br>
+<br>
+Por dois motivos:<br>
+<br>
+1) Não preciso testar lista vazia toda hora no insere, porque sempre tenho a cabeça, nunca está vazio;<br>
+<br>
+2) Não preciso usar ponteiros para ponteiros. Se não tiver cabeça, preciso alterar lst, que aponta para o início. Só que lst é um ponteiro e se eu passar o endereço de um ponteiro, isso vira no insere, ponteiro para ponteiro.<br></p>
+
+## Material complementar
+
+https://www.youtube.com/watch?v=hkRC0wdZUUU
