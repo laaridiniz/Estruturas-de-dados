@@ -149,3 +149,9 @@ def fib(n):
 print(fib(10))
 ```
 
+<p align="justify">O grande problema desta sequência de Fibonacci é que quando ela é escrita de forma recursiva, ela perde a eficiência, provando que nem sempre um programa recursivo é eficiente. Neste caso, especificamente, esta ineficiência se justifica pelo fato de o código retornar um mesmo valor várias vezes até chegar no resultado desejado.<br>
+<br>
+Para tornar esse código eficiente, é necessário pensar em uma estrutura de dados que armazene os resultados já calculados. Neste caso, isso pode ser feito de duas formas:<br></p>
+
+* Usar dicionários ou listas
+* Usar a biblioteca functools e o método @lru_cache para guardar os resultados na memória
