@@ -32,9 +32,9 @@ Seus elementos contém uma chave e um valor, isto é:<br>
 <br>
 Sua sintaxe básica é: <b>{'chave':'valor'}</b>. Ou seja, utiliza-se <b>{}</b> (chaves) para delimitar o dicionário e a chave é separada do valor por <b>:</b> (dois pontos).<br>
 <br>
-Se ao utilizar <b>type()</b> a saída for <b><class 'dict'></b>, então estaremos diante de um dicionário.<br>
+Se ao utilizar <b>type()</b> a saída for <b>class 'dict'</b>, então estaremos diante de um dicionário.<br>
 <br>
-Por fim, o jeito de deixar de repetir sem mudar o código é usar bibliotecas. Com isso, posso usar a memória do sistema operacional (cache) para guardar os retornos já calculados. Uso um decorador do Python, chamado lru_cache, lru = less results used. O decorador faz um envelope da função Fibonacci e dá super poderes sem mudar o código:<br>
+Por fim, o jeito de deixar de repetir sem mudar o código é usar bibliotecas. Com isso, posso usar a memória cache para guardar os retornos já calculados. Uso um decorador do Python, chamado lru_cache, lru = less results used. O decorador faz um envelope da função Fibonacci e dá super poderes sem mudar o código:<br>
 <br>
 
 ```
