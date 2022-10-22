@@ -1,5 +1,50 @@
 <h1 align="center">⭐Recursividade⭐</h1>
 
+## Ideias iniciais
+
+<p align="justify">Instância = exemplo concreto do problema. <br>
+<br>
+Conhecer a instância é importante porque ela impacta diretamente na quantidade de passos e no tamanho do espaço necessários para a resolução do problema relacionado àquela instância concreta.<br>
+<br>
+Em geral, as funções recursivas têm o seguinte padrão:<br></p>
+
+```
+def funcao recursiva(instancia):
+	if instancia pequena: return resp
+	#reduz a instância
+	#chama a função com a instância menor
+	return composicao com a instancia menor
+```
+
+<p align="justify">É possível perceber esse comportamento analisando a função fatorial a seguir:<br></p>
+
+```
+def fat(n):
+	if n <= 1: return 1
+	return n * fat(n-1)
+print(fat(4))
+```
+
+```
+fat(4):
+	if 4 <= 1: 
+	return 4 * fat(3) -> 4 * 6 = 24
+fat(3):
+	if 3 <= 1:
+	return 3 * fat(2) -> 3 * 2 = 6
+fat(2):
+	if 2 <= 1:
+	return 2 * fat(1) -> 2 * 1 = 2
+fat(1): 
+	if 1 <= 1: return 1
+```
+
+```
+print(fat(4)) -> 24
+```
+
+A recursividade faz parte da estrutura de dados porque utiliza o retorno do dado para fazer a conta.
+
 ## Conceito
 
 <p align="justify">Recursividade, Recursão ou Recorrência são sinônimos e se referem à capacidade que uma função ou subrotina tem de invocar a si mesma. Ou seja, na prática é uma função que chama a si própria no código.<br>
