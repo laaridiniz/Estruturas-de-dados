@@ -22,10 +22,13 @@ No dicionário, se uma cidade tiver muitos vizinhos, vou ter que andar até o fi
 <br>
 Vamos usar matriz, já que o número de cidades não é tão grande e posso até otimizar e guardar o conteúdo em um bit, já que é 0 ou 1.
 Para andar pela cidade preciso guardar as seguintes, para a partir delas ir para frente. Para isso, vou usar uma estrutura chamada fila.<br>
+<br></p>
+
+## Fila
+
+<p align="justify">FILA -> FIFO = first in, first out<br>
 <br>
-FILA -> FIFO = first in, first out<br>
-<br>
-Qual é a estrutura lógica do programa?<br>
+Qual é a estrutura lógica do programa?<br></p>
 
 ```
 fila = origem
@@ -40,7 +43,7 @@ Como vou garantir que a distância é mínima?<br>
 <br>
 Tenho que guardar as distâncias num local.<br>
 <br>
-Sugestão: a distância é sempre positiva. Vou começar com -1 para dizer que nunca passei por lá.<br></p>
+Sugestão: a distância é sempre positiva. Vou começar com -1 para dizer que nunca passei por lá.<br>
 
 ```
 A = [[0, 1, 0, 0, 0, 0], 
@@ -65,6 +68,12 @@ def Distancias(n, origem):
 
 print (Distancias(len(A), 3))
 ```
+
+## Pilha
+
+<p align="justify">O último a ser colocado é o primeiro a ser tratado, como uma pilha de dados. {()} [()] A expressão é bem formada? Usa-se pilha para saber disso. ([{)]} náo é bem formado.<br>
+<br>
+Qual é a lógica? Tudo o que abre, significa menino, e coloca-se na pilha. Tudo o que fecha, é menina, e ela só pode ver o último que entrou, isto é, no topo da pilha. Se o topo for compatível, então deu match, porém, se for diferente, deu ruim. Por último, se sobrou menino sozinho na pilha também deu ruim.<br></p>
 
 ## Resumo
 
