@@ -1,5 +1,11 @@
 <h1 align="center">⭐Matrizes⭐</h1>
 
+<p align="justify">Quando se fala em análise de vetores, deve-se ter em mente três operações fundamentais: busca, inserção e remoção.<br>
+<br>
+No caso da remoção, o pior caso seria precisar remover o primeiro elemento do vetor, uma vez que precisaria mover todos os outros para a esquerda.<br>
+<br>
+A mesma coisa acontece com a inserção, cujo pior caso também se resume à inserção de elemento no início do vetor, considerando que será necessário mover todos os demais para a direita para poder ter espaço para o novo elemento.<br>
+</p>
 <p align="justify"><b>Problema: quero saber o vetor de distâncias mínimas da cidade origem 3 até as outras cidades.</b><br>
 <br>
 Em primeiro lugar, preciso de uma estrutura de dados para representar o desenho.<br>
