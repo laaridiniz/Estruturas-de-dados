@@ -8,7 +8,7 @@ Nessa linha de raciocínio, podemos dizer que o pior caso seria ter que inserir 
 <br>
 Há uma estrutura de dados chamada <b>lista ligada</b> ou <b>lista encadeada</b>. Pensando em uma caça ao tesouro, inserir ou remover pista ficaria muito rápido porque não mudaria os dados de lugar, somente as pistas.<br>
 <br>
-Em C, há um tipo de dado chamado <b>ponteiro</b>, que serve apenas para apontar a região da memória onde está o dado. Em linhas de código, encontramos um ponteiro da seguinte forma:<br></p>
+Em C, há um tipo de dado chamado <b>ponteiro</b>, que serve apenas para apontar a região da memória onde está o dado. Ou seja, o ponteiro é uma variável que armazena endereços/índices da memória onde estão os dados. Em linhas de código, encontramos um ponteiro da seguinte forma:<br></p>
 
 ```
 int k;
