@@ -8,3 +8,4 @@
 * [Dicionários](https://github.com/laaridiniz/Estruturas-de-dados/tree/main/Dicion%C3%A1rios)
 * [Ponteiros](https://github.com/laaridiniz/Estruturas-de-dados/tree/main/Ponteiros)
 * [Matrizes](https://github.com/laaridiniz/Estruturas-de-dados/tree/main/Matrizes)
+* [Busca Binária](https://github.com/laaridiniz/Estruturas-de-dados/tree/main/Busca%20bin%C3%A1ria)
