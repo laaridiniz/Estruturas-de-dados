@@ -54,6 +54,13 @@ Obs.: e = d-1 significa que os elementos são contíguos.<br>
 <br>
 A busca binária é como a invenção da roda no mundo das Estruturas de Dados. Isto porque divide o mundo em dois, a cada passo tenho metade das buscas. Além disso, podemos reaproveitar a ideia de dividir o mundo em dois em vários outros contextos. O oposto também é rápido, dobra-se o número de resultados bons a cada passo.<br>
 <br>
+Usos:<br><br>
+a) Procurar um nome na lista abrindo a lista no meio;<br><br>
+b) Desenhar 128 retângulos em uma folha dobrando a folha sucessivamente ao meio; <br><br>
+c) Fazer o índice de um banco de dados.<br>
+<br>
+Custa log (n, 2) passos para dividir, onde n é o tamanho do vetor. <br>
+<br>
 Suponha que precise desenhar 128 retângulos em numa folha de papel. Existem duas formas básicas:<br></p>
 
 * Mede-se a largura e comprimento, divida a folha em 128 retângulos, desenhando-se um por um.
