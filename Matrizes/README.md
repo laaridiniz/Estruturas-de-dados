@@ -19,8 +19,13 @@ b) Dicionário, onde a chave é origem e tenho uma lista de destinos (consome me
 As duas possibilidades têm vantagens e desvantagens. Uma matriz ocupa muito espaço, além de ter muitas posições com zero (posições inúteis). Porém, é muito mais rápido perguntar se uma cidade é vizinha da outra.<br>
 <br>
 No dicionário, se uma cidade tiver muitos vizinhos, vou ter que andar até o final até descobrir se é vizinho ou não. Na matriz, a resposta é imediata.<br>
+<br></p>
+
+<div align="center">
+	<img src="matriz.jpeg" alt="comparação visual entre matriz e dicionário" width="800" height="500">
+</div>
 <br>
-Vamos usar matriz, já que o número de cidades não é tão grande e posso até otimizar e guardar o conteúdo em um bit, já que é 0 ou 1.
+<p align="justify">Vamos usar matriz, já que o número de cidades não é tão grande e posso até otimizar e guardar o conteúdo em um bit, já que é 0 ou 1.
 Para andar pela cidade preciso guardar as seguintes, para a partir delas ir para frente. Para isso, vou usar uma estrutura chamada fila.<br>
 <br></p>
 
